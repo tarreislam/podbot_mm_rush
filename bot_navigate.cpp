@@ -4979,6 +4979,9 @@ int BotFindGoal(bot_t* pBot)
 		iTacticChoice = iGoalDesire;
 		iTactic = 3;
 	}
+	
+	iTacticChoice = 100;
+	iTactic = 2;
 
 tacticchosen:
 	for (index = 0; index < 4; index++)
