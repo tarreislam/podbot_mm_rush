@@ -5060,7 +5060,7 @@ tacticchosen:
 	if (pBot->curr_wpt_index < 0 || pBot->curr_wpt_index >= g_iNumWaypoints)
 		BotChangeWptIndex(pBot, WaypointFindNearestToMove(pBot->pEdict, pBot->pEdict->v.origin)); // KWo - 17.04.2008
 
-	if (pBot->bot_personality == 1) // Psycho doesn't care about danger :)  KWo - 14.02.2006
+	if (true) // Psycho doesn't care about danger :)  KWo - 14.02.2006. // Remove personality on this choice
 	{
 		iTestIndex = iGoalChoices[RANDOM_LONG(0, 3)];
 		if (iTestIndex >= 0 && iTestIndex < g_iNumWaypoints)
